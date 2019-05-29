@@ -28,7 +28,7 @@ import {PlayerService} from './shared/services/player.service';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [HttpClient, PlayerService],
   bootstrap: [AppComponent]
