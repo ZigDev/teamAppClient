@@ -19,7 +19,8 @@ import {
   MatRadioModule,
   MatCardModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatDialogModule, MatSnackBarModule, MatChipsModule
 } from '@angular/material';
 import { PlayersListComponent } from './players-list/players-list.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -55,9 +56,13 @@ import { RoutingModule } from './routing/routing.module';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    RoutingModule
+    RoutingModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatChipsModule
   ],
   providers: [HttpClient, PlayerService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PlayerAddComponent]
 })
 export class AppModule { }
